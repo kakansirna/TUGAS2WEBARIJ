@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "title": "Interstellar",
+        "genre": "Sci-Fi",
+        "year": 2014
+    },
+    {
+        "id": 2,
+        "title": "The Dark Knight",
+        "genre": "Action",
+        "year": 2008
+    },
+    {
+        "id": 3,
+        "title": "Inception",
+        "genre": "Sci-Fi",
+        "year": 2010
+    },
+    {
+        "id": 4,
+        "title": "Parasite",
+        "genre": "Thriller",
+        "year": 2019
+    },
+    {
+        "id": 5,
+        "title": "John Wick",
+        "genre": "Action",
+        "year": 2014
+    },
+    {
+        "id": 6,
+        "title": "burger kill",
+        "genre": "thriller",
+        "year": 2024,
+        "image": "uploads\/1784659547_burger.png"
+    }
+]

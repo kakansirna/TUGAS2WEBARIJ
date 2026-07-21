@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinemaHub - Movie App</title>
+  <!-- Google Fonts Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+  <!-- Halaman Login -->
+  <div id="page-login">
+    <div class="card">
+      <h2>🎬 Movie App</h2>
+      <p class="subtitle">Silakan login untuk melanjutkan</p>
+      <div id="login-error" class="alert error" style="display:none"></div>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="btn-login">Login</button>
+      <p class="hint">Akun: admin / admin123</p>
+    </div>
+  </div>
+
+  <!-- Halaman Utama (setelah login) -->
+  <div id="page-main" style="display:none">
+    <header>
+      <span>🎬 Movie App</span>
+      <div>
+        <span id="label-user"></span>
+        <button id="btn-logout">Logout</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Search & Get Movies -->
+      <section class="card">
+        <h3>Daftar Movie</h3>
+        <div class="row-input">
+          <input type="text" id="search-input" placeholder="Cari judul atau genre...">
+          <button id="btn-search">Cari</button>
+          <button id="btn-get">Tampilkan Semua</button>
+        </div>
+        <div id="movies-result"></div>
+      </section>
+
+      <!-- Add Movie -->
+      <section class="card">
+        <h3>Tambah Movie</h3>
+        <div id="add-error"  class="alert error"   style="display:none"></div>
+        <div id="add-success" class="alert success" style="display:none"></div>
+        <input type="text"   id="add-title" placeholder="Judul">
+        <input type="text"   id="add-genre" placeholder="Genre">
+        <input type="number" id="add-year"  placeholder="Tahun (misal: 2023)">
+        <div class="file-input-wrapper">
+          <label for="add-image">Poster Film (Opsional)</label>
+          <input type="file"   id="add-image" accept="image/*">
+        </div>
+        <button id="btn-add">Tambah Movie</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
